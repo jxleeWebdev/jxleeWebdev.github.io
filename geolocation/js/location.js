@@ -1,5 +1,5 @@
 let elLocate = document.getElementById("btnLocate")
-elLocate.addEventListener("click"function(position){
+elLocate.addEventListener("click",function(position){
 
 
     if(navigator.geolocation){
