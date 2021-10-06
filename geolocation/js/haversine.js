@@ -1,22 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haversine</title>
-</head>
-<body>
-    <h1>Distance calculation</h1>
+function haversine(lat1, lon1, lat2, lon2) {
+	var R = 6371; // earth radius in KM
+	var dLat = (lat2-lat1).toRad();
+	var dLon = (lon2-lon1).toRad();
+	var lat1 = lat1.toRad();
+	var lat2 = lat2.toRad();
 
-    <div id="lat">Waiting for the latitude...</div>
-    <div id="long">Waiting for the longitude...</div>
-    <div id="depulze">Waiting for the location info...</div>
-    <div id="klcc">Waiting for the location info...</div>
-    <div id="sunway">Waiting for the location info...</div>
-    <button id="locate">Locate Me!</button>
+	var a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2); 
+	var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+	var d = R * c; // Kilometers
 
-    <script src="js/haversine.js"></script>
-    <script src="js/haversine_main.js"></script>
-</body>
-</html>
+	return roundVal(d);
+}
+
+// Converts numeric degrees to radians
+if (typeof Number.prototype.toRad == 'undefined') {
+  Number.prototype.toRad = function() {
+    return this * Math.PI / 180;
+  }
+}
+
+function roundVal(val) {
+  var dec = 2;
+  var result = Math.round(val*Math.pow(10,dec))/Math.pow(10,dec);
+  return result;
+} 
