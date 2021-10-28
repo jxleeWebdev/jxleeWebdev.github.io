@@ -9,19 +9,27 @@ bookNowBtn.addEventListener("click", function () {
     let userPax = document.getElementById("userPax")
     let userPaxVal = userPax.value
 
+    let userPackage = document.getElementById("userPackage")
+    let userPackageVal = userPackage.value
+
+    let userPrefer = document.getElementById("userPrefer")
+    let userPreferVal = userPrefer.value
+
     let userRemarks = document.getElementById("userRemarks")
     let userRemarksVal = userRemarks.value
 
      BookNow(userNameVal, userEmailVal, userPaxVal, userRemarksVal)
 })
 
-function BookNow(userName, userEmail, userPax, userRemarks) {
-    let url = 'https://api.sheety.co/95ac9b79432531ba44206a774f4126d9/bookingApp/bookings';
+function BookNow(userName, userEmail, userPax, userPackage, userPrefer, userRemarks) {
+    //let url = 'https://api.sheety.co/95ac9b79432531ba44206a774f4126d9/bookingApp/bookings';
     let body = {
         booking: {
             name: userName,
             email: userEmail,
             pax: userPax,
+            Package: userPackage,
+            Prefer: userPrefer,
             remarks: userRemarks
        }
     }
