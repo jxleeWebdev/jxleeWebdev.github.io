@@ -45,7 +45,7 @@ function BookNow(userName, userEmail, userPax, userPackage, userPrefer, userRema
         .then(json => {
             // Do something with object
             console.log(json.booking);
-            alert(json.booking.name + "added in the list!")
+            alert(json.booking.name + " added in the list!")
         }); 
 
 }
