@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table Booking App - Main Page</title>
+    <title>MY Tour Booking Site - Main Page</title>
     <style>
         /* Three columns side by side */
 .column {
@@ -53,13 +53,13 @@ footer {
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
 </head>
 
-<body>
-    <div class="container-fluid">
+<body style="background-color: linen;">
+    <div class="container-fluid"  style="background-color: lightpink;">
         <!-- Nav Bar -->
-        <div class="row">
+        <div class="row" style="background-color: thistle;">
             <div class="col">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="index.html">Table Booking App</a>
+                    <a class="navbar-brand" href="index.html"style="background-color: thistle;" >MY Best Tour Booking Site</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -67,12 +67,12 @@ footer {
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
+                        <ul class="navbar-nav mr-auto" style="background-color: rgb(137, 202, 175);">
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="book.html">Book</a>
+                                <a class="nav-link" href="book.html">Book Tour</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="list.html">List</a>
@@ -87,77 +87,80 @@ footer {
         <div class="row">
             <div class="col">
                 <div class="jumbotron">
-                    <h1 class="display-4">Discover your tast palates!</h1>
-                    <p class="lead">With thousands menu to choose from, the only thing you need is your gut!</p>
+                    <h1 class="display-4">MY Best Tour Travel Agent</h1>
+                    <p class="lead">Go to Travel with te best price and deals, go with The Best Travel that will leave you an unforgetable experince ... !</p>
                     <hr class="my-4">
-                    <a class="btn btn-primary btn-lg" href="book.html" role="button">I'm ready, lets do this!</a>
+                    <a class="btn btn-primary btn-lg" href="book.html" role="button">Try it now, dont miss it!</a>
                 </div>
             </div>
         </div>
     </div>
 
-   
-       <!-- card 1 -->    
-       <div class="row">
-        <div class="column">
-          <div class="card">
-            <img src="https://www.suriaklcc.com.my/wp-content/uploads/2020/09/img-cuti-klcc-20200928.suriaklcc.jpg" style="width:100%;">
-            <div class="container">
-              <h2>City Tour</h2>
-              <p class="title">CEO & Founder</p>
-              <p>You will go to see the most beautiful city view in the town and will also visit those palces as well.  </p>
-              <p>example@example.com</p>
-              <button onclick="promotion1()">Promotion</button>
-              <p id="promo1"></p>
-            </div>
+    <!-- card -->    
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6a/d9/ce.jpg" style="width:100%;">
+          <div class="container">
+            <h2>City Tour</h2>
+            <p>You will get to see some of the most beautiful city view in the town and will also visit those palces as well. 
+              Thats not all, enjoy some nice local and buy some local product will also be very very interesting ...etc </p>
+            <button onclick="promotion1()">Promotion</button>
+            <p id="promo1" class="card" style="background: darkturquoise; border-style: hidden;"></p>
           </div>
         </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="https://greenglobaltravel.com/wp-content/uploads/2018/08/Borneo-Kayaking-An-Epic-Education-1-.jpg" style="width:100%;">
+          <div class="container">
+            <h2>Discovery Tour</h2>             
+            <p>You will discover with your own eyes to see soem of the natural places in Malaysia,and you will have a chance to feels peaceful enviroment.
+              At the same time you may get a chance to go junggle tracking, flying fox and etc...  </p>
+            <button onclick="promotion2()">Promotion</button>
+            <p id="promo2" class="card" style="background: cornflowerblue; border-style: hidden;"></p>
+          </div>
+        </div>
+      </div>
       
-        <div class="column">
-          <div class="card">
-            <img src="https://th.bing.com/th/id/OIP.tD12g6B-YpLCJlidwODvcQHaE7?pid=ImgDet&rs=1" style="width:100%;">
-            <div class="container">
-              <h2>Discovery Tour</h2>
-              <p class="title">Art Director</p>
-              <p>You will discover with your own eyes to see the natural place in Malaysia,and you will have a chance to feels peaceful enviroment.
-                At the same time you may get a chance to go junggle tracking, flying fox and etc  </p>
-              <p>example@example.com</p>
-              <br><br>
-              <button onclick="promotion2()">Promotion</button>
-              <p id="promo2"></p>
-            </div>
+      <div class="column">
+        <div class="card">
+          <img src="https://www.adequatetravel.com/blog/wp-content/uploads/2019/07/The-AFamosa-Fortress-popular-monuments-in-Malaysia-unique-monuments-in-Malaysia.jpg" style="width:100%">
+          <div class="container">
+            <h2>Historical Tour</h2>
+            <p class="title">Designer</p>
+            <p>You will discover with your own eyes to see the historial place in Malaysia,
+              At the same tiime you will also get to know the culture, the history behind the wonderful places that you will going to visit ...!</p>
+            
+            <button onclick="promotion3()">Promotion</button>
+            <p id="promo3"class="card" style="background: honeydew ; border-style: hidden;" ></p>
           </div>
         </div>
+      </div>
+     </div> 
+
+      <br>
+      <article style="text-align:center; border-style: hidden; border-radius: 50ex; box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.2);">
+        <h3>Have an idea of your own trip? Want you plan your own tour....?</h3>
+        <p>
+           Planing your own trip is not a problem with us, will like to hear your wonderful and interesting plan. We do provide a a speical tour as 
+           <strong style="color: indianred;">Custom tour</strong>. If you have any question felll free to call us or email us, our team will do our very best to surve you.... 
+        </p>
+      </article>
+      <br>
+      <a class="btn btn-primary btn-lg" href="book.html" role="button" style="margin: 50px;">Get Booking!</a>
+      <br>
+      <br>
+      <p style="text-align: center;">MY Best Tour Travel Agent Sdn.Bhd    Phone: +603-8891 8000      Email: enquiries@tourism.gov.my</p>
         
-        <div class="column">
-          <div class="card">
-            <img src="https://www.amitravel.my/wp-content/uploads/2018/10/Famosa-815x615.jpg" style="width:100%">
-            <div class="container">
-              <h2>Historical Tour</h2>
-              <p class="title">Designer</p>
-              <p>You will discover with your own eyes to see the historial place in Malaysia,
-                At the same tiime you will also get to know the culture. </p>
-              <p>example@example.com</p>
-              <br><br>
-              <button onclick="promotion3()">Promotion</button>
-              <p id="promo3"></p>
-            </div>
-          </div>
-        </div>
-       </div>
-
-       <a class="btn btn-primary btn-lg" href="book.html" role="button">I'm ready, lets do this!</a>
-
-
-
-
-        <!-- footer -->    
+      <!-- footer -->    
         <footer>
               <p>Here are some of the refrence for you to getting to know of this wonderful country..... </p>
               <a href="https://www.tourism.gov.my" target="_blank">Tourism Malysia</a>
               <br>
               <a href="https://www.matic.gov.my" target="_blank">Malaysia Tourism Centre (MaTiC)</a>
-            
+              <br>   
           </footer>      
 
 

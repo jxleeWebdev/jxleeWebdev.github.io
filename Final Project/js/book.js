@@ -18,7 +18,8 @@ bookNowBtn.addEventListener("click", function () {
     let userRemarks = document.getElementById("userRemarks")
     let userRemarksVal = userRemarks.value
 
-     BookNow(userNameVal, userEmailVal, userPaxVal, userRemarksVal)
+
+     BookNow(userNameVal, userEmailVal, userPaxVal, userPackageVal, userPreferVal, userRemarksVal)
 })
 
 function BookNow(userName, userEmail, userPax, userPackage, userPrefer, userRemarks) {
@@ -28,8 +29,8 @@ function BookNow(userName, userEmail, userPax, userPackage, userPrefer, userRema
             name: userName,
             email: userEmail,
             pax: userPax,
-            Package: userPackage,
-            Prefer: userPrefer,
+            package: userPackage,
+            prefer: userPrefer,
             remarks: userRemarks
        }
     }
